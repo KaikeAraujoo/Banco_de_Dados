@@ -1,6 +1,4 @@
--- ======================================
--- LIMPAR (para não dar erro se já existir)
--- ======================================
+
 
 DROP TABLE IF EXISTS itens_venda;
 DROP TABLE IF EXISTS vendas;
@@ -8,9 +6,6 @@ DROP TABLE IF EXISTS pets;
 DROP TABLE IF EXISTS produtos;
 DROP TABLE IF EXISTS clientes;
 
--- ======================================
--- CRIAÇÃO DAS TABELAS
--- ======================================
 
 CREATE TABLE clientes (
     id SERIAL PRIMARY KEY,
@@ -46,9 +41,6 @@ CREATE TABLE itens_venda (
     preco_unitario NUMERIC(10,2)
 );
 
--- ======================================
--- INSERTS
--- ======================================
 
 INSERT INTO clientes (nome, telefone) VALUES
 ('João', '99991111'),
