@@ -68,7 +68,6 @@ clientes_filtrados AS (
     AND pc.qtd_pets >= 1
 )
 
--- RESULTADO FINAL UNIFICADO
 SELECT '1 - Clientes que compraram ração' AS tipo, nome::text AS resultado
 FROM clientes_racao
 
